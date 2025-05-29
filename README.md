@@ -7,10 +7,10 @@ CashControl je desktopová aplikace pro správu osobních financí, která umož
 ## Hlavní funkce
 
 - **Evidence transakcí** – přidávání, úprava a mazání záznamů o příjmech a výdajích.
-- **Kategorie transakcí** – možnost rozdělit transakce do kategorií, které si uživatel může přizpůsobit.
+- **Kategorie transakcí** – možnost rozdělit transakce do kategorií, které si uživatel může přidávat, ale nelze je upravovat ani mazat.
 - **Filtrování** – snadné filtrování transakcí podle kategorie, typu (příjem/výdaj), měsíce a roku.
 - **Grafické přehledy** – zobrazení grafů, které ukazují rozložení výdajů a příjmů podle kategorií a časový vývoj finančního zůstatku.
-- **Ukládání kategorií** – kategorie jsou uloženy v samostatném souboru, což umožňuje jejich snadnou správu a úpravy i mimo hlavní aplikaci.
+- **Ukládání kategorií** – kategorie jsou uloženy do samostatného TXT souboru, což umožňuje jejich snadnou správu a přidávání nových kategorií i mimo hlavní aplikaci.
 
 ## Datové úložiště – SQLite
 
@@ -34,12 +34,16 @@ Aplikace využívá **SQLite databázi** (`transakce.db`) pro ukládání všech
 3. Pomocí tlačítek můžete transakce upravovat nebo mazat.
 4. Pro přehledné zobrazení finančních dat využijte filtrování podle kategorie, typu, měsíce a roku.
 5. Grafy vám vizuálně ukážou rozložení financí a časový vývoj zůstatku.
-6. Kategorié lze přidávat.
-7. Všechna data se ukládají do SQLite databáze `transakce.db`, která je uložena ve složce aplikace.
+6. Kategorie lze přidávat – jsou uloženy do samostatného TXT souboru.
+7. Všechna finanční data se ukládají do SQLite databáze `transakce.db`, která je uložena ve složce aplikace.
+
+## Další informace
+
+- Data jsou bezpečně uložena lokálně, což zajišťuje plnou kontrolu nad osobními informacemi.
+- Uživatelské rozhraní je navrženo pro jednoduchost a přehlednost, aby i začátečníci mohli efektivně spravovat své finance.
 
 ---
 
 ## Autor
 
 Projekt vytvořil Tomáš Mirvald.
-
